@@ -1,11 +1,8 @@
-
-$s-dark:    #485460
-$p-green:   #05c46b
-$p-yellow:  #ffd32a
+@use '../shared/clr'
 
 .note-header
-    color: $p-green
-    border-bottom: 1px solid $s-dark
+    color: clr.$p-green
+    border-bottom: 1px solid clr.$s-dark
 
     &:hover
-        color: $p-yellow
+        color: clr.$p-yellow
