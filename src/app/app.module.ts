@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { NotepadComponent } from './notepad/notepad.component';
 import { NotepadViewComponent } from './notepad/notepad-view/notepad-view.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AutosizeModule } from 'ngx-autosize';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     NotepadComponent,
     NotepadViewComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    AutosizeModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
