@@ -7,16 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { NotepadComponent } from './notepad/notepad.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    NotepadComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, HeaderComponent, NotepadComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
