@@ -1,1 +1,35 @@
-<p>notepad-view works!</p>
+<form [formGroup]="noteForm" (ngSubmit)="onSave(noteForm.value)">
+  <div class="form-row d-flex">
+    <div class="form-group flex-fill">
+      <input
+        type="text"
+        id="title"
+        name="title"
+        autocomplete="off"
+        placeholder="Title goes here..."
+        class="form-control note-input note-bg note-input--title"
+        formControlName="title"
+      />
+    </div>
+    <div class="form-group">
+      <button
+        class="btn btn-delete"
+        type="button"
+        (click)="onDelete()"
+      ></button>
+      <button class="btn btn-new" type="button" (click)="onNew()"></button>
+      <button class="btn btn-save" type="submit"></button>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group w-100">
+      <textarea
+        id="content"
+        name="content"
+        placeholder="Content goes here..."
+        class="form-control note-input note-bg note-input--content"
+        formControlName="content"
+      ></textarea>
+    </div>
+  </div>
+</form>
