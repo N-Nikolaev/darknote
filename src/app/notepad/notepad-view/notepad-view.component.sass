@@ -1,0 +1,44 @@
+@use '../../shared/clr'
+
+.btn
+    height: 44px
+    width: 50px
+
+.btn-delete
+    background: center url('../../../assets/delete.svg') no-repeat
+
+    &:hover
+        background: center url('../../../assets/delete-hover.svg') no-repeat
+
+.btn-new
+    background: center url('../../../assets/new.svg') no-repeat
+
+    &:hover
+        background: center url('../../../assets/new-hover.svg') no-repeat
+
+.btn-save
+    background: center url('../../../assets/save.svg') no-repeat
+
+    &:hover
+        background: center url('../../../assets/save-hover.svg') no-repeat
+
+.note-input
+    border-color: clr.$p-dark
+
+    &::placeholder
+        color: clr.$s-dark
+
+    &:focus
+        background-color: clr.$t-dark
+        box-shadow: 0 0 0 0.1rem clr.$s-blue
+
+form
+    height: calc(100% - 5px)
+
+.note-input--title
+    font-size: 1.5rem
+    color: clr.$p-light
+
+.note-input--content
+    min-height: calc(100vh - 180px)  //VH size hack
+    color: clr.$s-light
