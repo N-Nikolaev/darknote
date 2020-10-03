@@ -5,18 +5,16 @@
     <span
       (click)="onSelected(note)"
       class="list-group-item list-group-item-action note-list-item note-bg"
-      *ngFor="let note of notes | reverse"
+      *ngFor="let note of notes"
     >
       <div class="d-flex w-100 justify-content-between">
-        <span class="mb-1 note-list-item--title">{{
-          note.title | shorten: 20
-        }}</span>
+        <span class="mb-1 note-list-item--title">{{ note.title }}</span>
         <button class="badge btn btn-delete-list" (click)="onDelete(note.id)">
           &nbsp;
         </button>
       </div>
       <p class="mb-1 note-list-item--content">
-        {{ note.content | shorten: 30 }}
+        {{ note.content }}
       </p>
       <small class="note-list-item--content">{{ note.date | date }}</small>
     </span>
