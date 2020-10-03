@@ -1,0 +1,31 @@
+@use '../../shared/clr'
+
+.btn-delete-list
+    height: 28px
+    width: 28px
+    background: center url('../../../assets/delete-item.svg') no-repeat
+
+    &:hover
+        background: center url('../../../assets/delete-item-hover.svg') no-repeat
+
+.note-list-item
+    border-color: clr.$p-dark
+
+    &:focus
+        background-color: transparent
+
+    &:active, &:hover
+        cursor: pointer
+        background-color: clr.$t-dark
+        box-shadow: 0 0 0 2px clr.$s-green
+        border-radius: 4px
+
+.note-list-item--title
+    min-width: 100px
+    font-size: 1.25rem
+    font-weight: 500
+    line-height: 1.2
+    color: clr.$s-light
+
+.note-list-item--content
+    color: clr.$s-dark
