@@ -1,0 +1,18 @@
+<nav class="navbar navbar-dark note-bg note-header mb-3">
+  <span class="navbar-brand">
+    <img
+      src="../../assets/book-open.svg"
+      width="35"
+      height="35"
+      class="d-inline-block align-top"
+      alt=""
+      loading="lazy"
+    />
+    DarkNote
+  </span>
+  <div class="navbar-nav">
+    <a class="nav-link" (click)="onLogin()" href="#">
+      {{ loginState ? "Logout" : "Login" }}
+    </a>
+  </div>
+</nav>
