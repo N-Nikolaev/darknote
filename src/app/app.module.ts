@@ -9,6 +9,7 @@ import { NotepadViewComponent } from './notepad/notepad-view/notepad-view.compon
 import { ReactiveFormsModule } from '@angular/forms';
 import { AutosizeModule } from 'ngx-autosize';
 import { NotepadListComponent } from './notepad/notepad-list/notepad-list.component';
+import { ShortenPipe } from './shared/shorten.pipe';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { NotepadListComponent } from './notepad/notepad-list/notepad-list.compon
     NotepadComponent,
     NotepadViewComponent,
     NotepadListComponent,
+    ShortenPipe,
   ],
   imports: [
     BrowserModule,
